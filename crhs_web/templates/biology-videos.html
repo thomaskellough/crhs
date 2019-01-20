@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+{% set active_page = "biology-videos" %}
+{% block content %}
+
+<div id="fh5co-main">
+    <div class="fh5co-narrow-content">
+        <h2 class="fh5co-heading">Pre-AP Biology Videos</h2>
+        <div class="flex-container animate-box" data-animate-effect="fadeInLeft">
+            <div class="flex-active fh5co-flex-wrap">
+                <btn class="btn btn-block btn-school-1" data-toggle="collapse" href="#unit1-collapse" role="button" aria-expanded="False" aria-controls="unit1-collapse">
+                    Chapter 6 - Genetics<span class="icon-arrow-down-thick"></span>
+                </btn>
+                <div class="collapse text-center" id="unit1-collapse">
+                    <iframe src="https://www.youtube.com/embed/8m6hHRlKwxY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/CBezq1fFUEA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/8kK2zwjRV0M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/mBq1ULWJp_M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/h2xufrHWG3E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/YJHGfbW55l0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

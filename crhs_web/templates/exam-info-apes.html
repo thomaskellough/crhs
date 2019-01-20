@@ -1,0 +1,22 @@
+{% extends 'course-layout-apes.html' %}
+{% set active_apes = "exam-info-apes" %}
+
+{% block contentapes %}
+    <div class="text-school-4 animate-box" data-animate-effect="fadeInLeft">
+        <h1 class="fh5co-heading-colored-school-1">Exam Format</h1>
+        <h1 class="fh5co-heading">Section I</h1>
+        <strong>Multiple Choice - 100 Questions | 1 Hour, 30 minutes | 60% of Exam Score</strong>
+        <ul>
+            <li>Individual Questions</li>
+            <li>Questions in sets</li>
+        </ul>
+        <br>
+        <h1 class="fh5co-heading">Section II</h1>
+        <strong>Free Response - 4 Questions | 1 Hour, 30 minutes | 40% of Exam Score</strong>
+        <ul>
+            <li>Data Set (1 Question)</li>
+            <li>Document-Based Questions (1 Question)</li>
+            <li>Synthesis and Evaluation (2 Questions)</li>
+        </ul>
+    </div>
+{% endblock contentapes %}

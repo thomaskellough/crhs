@@ -1,0 +1,91 @@
+{% extends 'layout.html' %}
+{% set active_page = "contact" %}
+{% from "_formhelpers.html" import render_field %}
+{% block content %}
+
+<div id="fh5co-main">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <div class="alert alert-{{ category }}">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+
+    <div class="fh5co-more-contact">
+        <div class="fh5co-narrow-content">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="fh5co-feature fh5co-feature-sm animate-box" data-animate-effect="fadeInLeft">
+                        <div class="fh5co-icon">
+                            <i class="icon-mail"></i>
+                        </div>
+                        <div class="fh5co-text">
+                            <p><a href="mailto:thomas_kellough@roundrockisd.org?Subject=Hello" target="_top">thomas_kellough@roundrockisd.org</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="fh5co-feature fh5co-feature-sm animate-box" data-animate-effect="fadeInLeft">
+                        <div class="fh5co-icon">
+                            <i class="icon-map"></i>
+                        </div>
+                        <div class="fh5co-text">
+                            <p>2801 Gattis School Rd, Round Rock, TX 78664</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="fh5co-feature fh5co-feature-sm animate-box" data-animate-effect="fadeInLeft">
+                        <div class="fh5co-icon">
+                            <i class="icon-phone"></i>
+                        </div>
+                        <div class="fh5co-text">
+                            <p><a href="tel:512-704-0042">512-704-0042</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fh5co-narrow-content animate-box" data-animate-effect="fadeInLeft">
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Questions? Comments?</h2>
+            </div>
+        </div>
+        <form action="" method=post>
+            {{ form.hidden_tag() }}
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                {{ render_field(form.name, class_="form-control") }}
+                            </div>
+                            <div class="form-group">
+                                {{ render_field(form.email, class_="form-control") }}
+                            </div>
+                            <div class="form-group">
+                                {{ render_field(form.phone, class_="form-control") }}
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                {{ render_field(form.text, class_="form-control") }}
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" class="btn btn-school-1 btn-md" value="Send Message">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3437.969020029865!2d-97.64392048539526!3d30.4936272041689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644d0268dd13397%3A0x12f101ff99e16668!2sCedar+Ridge+High+School!5e0!3m2!1sen!2sus!4v1544473286127" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+</div>
+
+{% endblock content %}

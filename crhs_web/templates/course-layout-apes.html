@@ -1,0 +1,35 @@
+{% extends 'layout.html' %}
+{% set active_page = "general-info-apes" %}
+{% block content%}
+
+<div id="fh5co-main">
+    <div class="fh5co-narrow-content">
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand"style="font-weight: bolder">AP Environmental Science</a>
+            </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li {% if active_apes =="course-overview-apes" %} class="active"{% endif %}><a href="/course-overview-apes">Course Overview</a></li>
+                    <li {% if active_apes =="course-details-apes" %} class="active"{% endif %}><a href="/course-details-apes">Course Details</a></li>
+                    <li {% if active_apes =="course-topics-apes" %} class="active"{% endif %}><a href="/course-topics-apes">Course Topics</a></li>
+                    <li {% if active_apes =="exam-info-apes" %} class="active"{% endif %}><a href="/exam-info-apes">Exam Information</a></li>
+                    <li {% if active_apes =="our-class-apes" %} class="active"{% endif %}><a href="/our-class-apes">Our Class</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+        {% block contentapes %}{% endblock contentapes %}
+    </div>
+</div>
+
+{% endblock content %}

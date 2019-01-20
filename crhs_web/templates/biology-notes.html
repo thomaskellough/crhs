@@ -1,0 +1,34 @@
+{% extends 'layout.html' %}
+{% set active_page = "biology-notes" %}
+{% block content%}
+
+<div id="fh5co-main">
+    <div class="fh5co-narrow-content">
+        <h2 class="fh5co-heading">Pre-AP Biology Notes</h2>
+        <div class="animate-box" data-animate-effect="fadeInLeft">
+            <btn class="btn btn-block btn-school-1" data-toggle="collapse" href="#unit1-collapse" aria-expanded="True" aria-controls="unit1-collapse">
+                Chapter 6 - Genetics<span class="icon-arrow-down-thick"></span>
+            </btn>
+            <div class="row row-bottom-padded-md collapse" id="unit1-collapse">
+                <div class="col-md-3 col-sm-6 col-padding animate-box" data-animate-effect="fadeInLeft">
+                    <div class="blog-entry">
+                        <a class="blog-img"><img src="static/images/gene-icon.png" class="img-responsive img-notes" alt="Gene-Icon"></a>
+                        <div class="desc">
+                            <h3><a>Chapter 6</a></h3>
+                            <ul class="list-unstyled">
+                                <li><a class="list-group-item list-group-item-school-2" href="static/files/Unit 08-Genetics-Booklet.pdf" target="_blank">Genetics Packet</a></li>
+                                <li><a class="list-group-item list-group-item-school-2" href="/genetics-quizlet" target="_blank">Flashcards</a></li>
+                                <li><a class="list-group-item list-group-item-school-2" href="/static/files/Ch 6.1 - Notes.pptx" target="_blank">6.1 PP</a></li>
+                                <li><a class="list-group-item list-group-item-school-2" href="/static/files/Ch 6.2 - Notes.pptx" target="_blank">6.2 PP</a></li>
+                                <li><a class="list-group-item list-group-item-school-2" href="/static/files/Genetics - 6.3 & 6.4.pptx" target="_blank">6.3 - 6.4 PP</a></li>
+                                <li><a class="list-group-item list-group-item-school-2" href="/static/files/Chapter 6 - 6.5 & 7.2.pptx" target="_blank">6.5 - 7.1 PP</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

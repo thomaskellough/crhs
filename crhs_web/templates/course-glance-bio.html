@@ -1,0 +1,61 @@
+{% extends 'course-layout-bio.html' %}
+{% set active_apes = "course-glance-bio" %}
+
+{% block contentapes %}
+    <div class="text-school-4 tab-pane animate-box" data-animate-effect="fadeInLeft">
+        <h1 class="fh5co-heading-colored-school-1">Course at a Glance</h1>
+
+        <ul class="nav nav-tabs " role="tablist" aria-hidden="false" data-cbtrack-navview="" style="display: block;"><li class="active" role="presentation"><a aria-controls="unit-1" data-toggle="tab" href="#unit-1" role="tab" data-cbtrack-nav="|local|tab||Unit 1|#unit-1" data-cbtrack-delay="" aria-selected="true">Unit 1</a></li>
+            <li role="presentation" class=""><a aria-controls="unit-2" data-toggle="tab" href="#unit-2" role="tab" data-cbtrack-nav="|local|tab||Unit 2|#unit-2" data-cbtrack-delay="" aria-selected="false">Unit 2</a></li>
+            <li role="presentation" class=""><a aria-controls="unit-3" data-toggle="tab" href="#unit-3" role="tab" data-cbtrack-nav="|local|tab||Unit 3|#unit-3" data-cbtrack-delay="" aria-selected="false">Unit 3</a></li>
+            <li role="presentation" class=""><a aria-controls="unit-4" data-toggle="tab" href="#unit-4" role="tab" data-cbtrack-nav="|local|tab||Unit 4|#unit-4" data-cbtrack-delay="" aria-selected="false">Unit 4</a></li>
+        </ul>
+
+        <div class="tab-content">
+            <div class="tab-pane active well" id="unit-1" role="tabpanel" tabindex="-1">
+                <h1 class="fh5co-heading"><strong>Unit title: </strong>Ecological Systems</h1>
+                <p><strong>Key topics:</strong></p>
+                <ul><li>Cycling of matter in the biosphere</li>
+                    <li>Population dynamics</li>
+                    <li>Defining ecological communities</li>
+                    <li>Ecological community dynamics</li>
+                    <li>Changes in ecological communities</li>
+                </ul>
+            </div>
+            <div class="tab-pane well" id="unit-2" role="tabpanel" tabindex="-1">
+                <h1 class="fh5co-heading"><strong>Unit title:</strong> Evolution</h1>
+                <p><strong>Key topics:</strong></p>
+                <ul>
+                    <li>Patterns of evolution</li>
+                    <li>Mechanisms of evolution</li>
+                    <li>Speciation</li>
+                </ul>
+            </div>
+            <div class="tab-pane well" id="unit-3" role="tabpanel" tabindex="-1">
+                <h1 class="fh5co-heading"><strong>Unit title: </strong>Cellular Systems</h1>
+                <p><strong>Key topics:</strong></p>
+                <ul>
+                    <li>Chemistry of life</li>
+                    <li>Cell structure and function</li>
+                    <li>Cell transport and homeostasis</li>
+                    <li>Organisms maintaining homeostasis</li>
+                    <li>Cell growth and division</li>
+                    <li>Photosynthesis</li>
+                    <li>Cellular respiration and fermentation</li>
+                </ul>
+            </div>
+            <div class="tab-pane well" id="unit-4" role="tabpanel" tabindex="-1">
+                <h1 class="fh5co-heading"><strong>Unit title: </strong>Genetics</h1>
+                <p><strong>Key topics:</strong></p>
+                <ul>
+                    <li>Structure of DNA</li>
+                    <li>DNA synthesis</li>
+                    <li>Protein synthesis</li>
+                    <li>Asexual and sexual passing of genes</li>
+                    <li>Inheritance patterns</li>
+                    <li>Biotechnology</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+{% endblock contentapes %}
