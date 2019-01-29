@@ -140,6 +140,31 @@ def survey():
     return render_template('survey.html', title='Student Survey')
 
 
+@app.route('/apes-ch9-p1')
+def apes_ch9_p1():
+    return render_template('apes-ch9-p1.html')
+
+
+@app.route('/apes-ch9-p3')
+def apes_ch9_p3():
+    return render_template('apes-ch9-p3.html')
+
+
+@app.route('/apes-ch9-p5')
+def apes_ch9_p5():
+    return render_template('apes-ch9-p5.html')
+
+
+@app.route('/apes-ch9-p6')
+def apes_ch9_p6():
+    return render_template('apes-ch9-p6.html')
+
+
+@app.route('/apes-ch9-p7')
+def apes_ch9_p7():
+    return render_template('apes-ch9-p7.html')
+
+
 @app.route('/biodiversity-quizlet')
 def biodiversity_quizlet():
     return render_template('biodiversity-quizlet.html', title='Biodiversity Flashcards')
