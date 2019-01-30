@@ -174,6 +174,12 @@ def biodiversity_quizlet():
 def water_resources_quizlet():
     return render_template('water-resources-quizlet.html', title='Water Resources Flashcards')
 
+
+@app.route('/quizlet-water-pollution')
+def quizlet_water_pollution():
+    return render_template('quizlet-water-pollution.html', title='Water Pollution Flashcards')
+
+
 @app.route('/genetics-quizlet')
 def genetics_quizlet():
     return render_template('genetics-quizlet.html', title='Genetics Flashcards')
