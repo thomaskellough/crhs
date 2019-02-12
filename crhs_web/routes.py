@@ -165,9 +165,9 @@ def apes_ch9_p7():
     return render_template('apes-ch9-p7.html')
 
 
-@app.route('/biodiversity-quizlet')
-def biodiversity_quizlet():
-    return render_template('biodiversity-quizlet.html', title='Biodiversity Flashcards')
+@app.route('/quizlet-biodiversity')
+def quizlet_biodiversity():
+    return render_template('quizlet-biodiversity.html', title='Biodiversity Flashcards')
 
 
 @app.route('/water-resources-quizlet')
@@ -178,6 +178,11 @@ def water_resources_quizlet():
 @app.route('/quizlet-water-pollution')
 def quizlet_water_pollution():
     return render_template('quizlet-water-pollution.html', title='Water Pollution Flashcards')
+
+
+@app.route('/quizlet-air-pollution')
+def quizlet_air_pollution():
+    return render_template('quizlet-air-pollution.html', title='Air Pollution Flashcards')
 
 
 @app.route('/genetics-quizlet')
