@@ -175,14 +175,19 @@ def water_resources_quizlet():
     return render_template('water-resources-quizlet.html', title='Water Resources Flashcards')
 
 
-@app.route('/quizlet-water-pollution')
-def quizlet_water_pollution():
-    return render_template('quizlet-water-pollution.html', title='Water Pollution Flashcards')
-
-
 @app.route('/quizlet-air-pollution')
 def quizlet_air_pollution():
     return render_template('quizlet-air-pollution.html', title='Air Pollution Flashcards')
+
+
+@app.route('/quizlet-evolution')
+def quizlet_evolution():
+    return render_template('quizlet-evolution.html', title='Evolution Flashcards')
+
+
+@app.route('/quizlet-water-pollution')
+def quizlet_water_pollution():
+    return render_template('quizlet-water-pollution.html', title='Water Pollution Flashcards')
 
 
 @app.route('/genetics-quizlet')
