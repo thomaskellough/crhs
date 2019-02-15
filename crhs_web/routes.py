@@ -165,6 +165,11 @@ def apes_ch9_p7():
     return render_template('apes-ch9-p7.html')
 
 
+@app.route('/evolution-storyboardthat')
+def evolution_storyboardthat():
+    return render_template('evolution-storyboardthat.html', title='Evolution Storyboards')
+
+
 @app.route('/quizlet-biodiversity')
 def quizlet_biodiversity():
     return render_template('quizlet-biodiversity.html', title='Biodiversity Flashcards')
