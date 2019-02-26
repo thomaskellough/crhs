@@ -190,6 +190,16 @@ def quizlet_evolution():
     return render_template('quizlet-evolution.html', title='Evolution Flashcards')
 
 
+@app.route('/quizlet-nonrenewable-energy')
+def quizlet_nonrenewable_energy():
+    return render_template('quizlet-nonrenewable-energy.html', title='Nonrenewable Energy Flashcards')
+
+
+@app.route('/quizlet-renewable-energy')
+def quizlet_renewable_energy():
+    return render_template('quizlet-renewable-energy.html', title='Renewable Energy Flashcards')
+
+
 @app.route('/quizlet-water-pollution')
 def quizlet_water_pollution():
     return render_template('quizlet-water-pollution.html', title='Water Pollution Flashcards')
