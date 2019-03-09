@@ -170,24 +170,24 @@ def evolution_storyboardthat():
     return render_template('evolution-storyboardthat.html', title='Evolution Storyboards')
 
 
-@app.route('/quizlet-biodiversity')
-def quizlet_biodiversity():
-    return render_template('quizlet-biodiversity.html', title='Biodiversity Flashcards')
-
-
-@app.route('/water-resources-quizlet')
-def water_resources_quizlet():
-    return render_template('water-resources-quizlet.html', title='Water Resources Flashcards')
-
-
 @app.route('/quizlet-air-pollution')
 def quizlet_air_pollution():
     return render_template('quizlet-air-pollution.html', title='Air Pollution Flashcards')
 
 
+@app.route('/quizlet-biodiversity')
+def quizlet_biodiversity():
+    return render_template('quizlet-biodiversity.html', title='Biodiversity Flashcards')
+
+
 @app.route('/quizlet-evolution')
 def quizlet_evolution():
     return render_template('quizlet-evolution.html', title='Evolution Flashcards')
+
+
+@app.route('/quizlet-land')
+def quizlet_land():
+    return render_template('quizlet-land.html', title='Land, Public & Private Flashcards')
 
 
 @app.route('/quizlet-nonrenewable-energy')
@@ -198,6 +198,11 @@ def quizlet_nonrenewable_energy():
 @app.route('/quizlet-renewable-energy')
 def quizlet_renewable_energy():
     return render_template('quizlet-renewable-energy.html', title='Renewable Energy Flashcards')
+
+
+@app.route('/water-resources-quizlet')
+def water_resources_quizlet():
+    return render_template('water-resources-quizlet.html', title='Water Resources Flashcards')
 
 
 @app.route('/quizlet-water-pollution')
