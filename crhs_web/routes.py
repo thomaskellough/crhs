@@ -184,6 +184,10 @@ def quizlet_biodiversity():
 def quizlet_evolution():
     return render_template('quizlet-evolution.html', title='Evolution Flashcards')
 
+@app.route('/quizlet-feeding-the-world')
+def quizlet_feeding_the_world():
+    return render_template('quizlet-feeding-the-world.html', title='Feeding the World Flashcards')
+
 
 @app.route('/quizlet-land')
 def quizlet_land():
@@ -208,6 +212,11 @@ def water_resources_quizlet():
 @app.route('/quizlet-water-pollution')
 def quizlet_water_pollution():
     return render_template('quizlet-water-pollution.html', title='Water Pollution Flashcards')
+
+
+@app.route('/quizlet-viruses-taxonomy')
+def quizlet_viruses_taxonomy():
+    return render_template('quizlet-viruses-taxonomy.html', title='Viruses & Taxonomy Flashcards')
 
 
 @app.route('/genetics-quizlet')
