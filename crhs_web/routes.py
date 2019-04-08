@@ -189,6 +189,11 @@ def quizlet_feeding_the_world():
     return render_template('quizlet-feeding-the-world.html', title='Feeding the World Flashcards')
 
 
+@app.route('/quizlet-human-health')
+def quizlet_human_health():
+    return render_template('quizlet-human-health.html', title='Human Health & Environmental Risks Flashcards')
+
+
 @app.route('/quizlet-land')
 def quizlet_land():
     return render_template('quizlet-land.html', title='Land, Public & Private Flashcards')
